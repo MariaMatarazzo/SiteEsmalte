@@ -1,0 +1,517 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FEE9F0; 
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pink {
+    color: #FF69B4; 
+}
+
+.green {
+    color: rgb(118, 224, 99); 
+}
+.lançamentos-list {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+}
+
+.lançamento {
+    display: flex; /* Habilita o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin: 1em 0; /* Espaçamento entre os lançamentos */
+}
+
+.imagem-lancamento {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+    margin-right: 1em; /* Espaçamento entre a imagem e os ícones */
+}
+
+.icon {
+    margin-left: 10px; /* Espaçamento entre os ícones */
+}
+
+.icon-img {
+    width: 30px; /* Ajuste o tamanho dos ícones */
+    height: auto;
+}
+
+.media-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    margin: 1em 0;
+}
+
+.video, .banner {
+    width: 30%; 
+    height: auto; 
+}
+
+.frase{
+    color: #FFD700; 
+    text-align: center; 
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.lançamentos-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.lançamento {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 1em; 
+}
+
+.imagem-lancamento {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.botoes {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.botao.adicionar {
+    background-color: #FF69B4; 
+    color: white; 
+}
+
+.botao.favoritar {
+    background-color: #FFA500; 
+    color: white; 
+}
+
+.botao {
+    margin-left: 10px; 
+    padding: 0.5em 1em;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.botao.adicionar:hover {
+    background-color: #FF1493; 
+}
+
+.botao.favoritar:hover {
+    background-color: #FF8C00; 
+}
+
+.banner-imagem {
+    width: 90%; 
+    height: auto; 
+    margin-top: 2em; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.banner-imagem img {
+    max-width: 100%;
+    height: auto; 
+}
+
+
+
+header {
+    background: #FEE9F0;
+    color: rgb(174, 239, 167);
+    padding: 0.5em; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px; /* Diminui o tamanho do logo */
+    height: auto;
+    margin-right: 3em; /* Diminui a margem do logo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px; /* Diminui a margem entre os itens do menu */
+}
+
+nav ul li a {
+    color: #FEE9F0(118, 224, 99);
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 50px; /* Diminui o tamanho dos ícones */
+    height: auto;
+    margin-left: 5px; /* Diminui o espaço entre os ícones */
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    border: 1px solid #FEE9F0;
+}
+
+.footer {
+    background: #FEE9F0; /* Cor da nuvem */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Habilita o Flexbox */
+    justify-content: space-between; /* Espaça os elementos uniformemente */
+    align-items: center; /* Alinha verticalmente */
+    margin: 2em 0; /* Espaçamento acima e abaixo */
+}
+
+.newsletter {
+    flex: 1; /* Ocupe 50% da largura */
+    margin-right: 1em; /* Espaço à direita */
+}
+
+.newsletter h3 {
+    margin: 0 0 10px; /* Margem abaixo do título */
+}
+
+.input-group {
+    display: flex; /* Habilita o Flexbox para os inputs */
+    flex-direction: column; /* Coloca os inputs um abaixo do outro */
+}
+
+.input-group input {
+    margin: 5px 0; /* Espaçamento entre os inputs */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #FEE9F0; /* Borda dos inputs */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.contato {
+    flex: 1; /* Ocupe 50% da largura */
+    margin-left: 1em; /* Espaço à esquerda */
+}
+
+.contato h3 {
+    margin: 0 0 10px; /* Margem abaixo do título */
+}
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .icons {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 40px; /* Mantém o tamanho reduzido do logo em telas pequenas */
+    }
+
+    nav ul li {
+        margin: 0 5px; 
+    }
+
+    section {
+        padding: 1em; 
+    }
+}
+
+.tabs {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.content {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content.active {
+    display: block;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: #ddd; /* Placeholder para imagens */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffe4e1; /* Rosa claro */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #e91e63; /* Cor do título */
+}
+
+.cadastro-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botao {
+    background-color: #c2185b; /* Rosa escuro */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #a50035; /* Tom mais escuro ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f0f4; /* Fundo suave */
+}
+
+.titulo {
+    text-align: center;
+    color: #e91e63; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.favoritos-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favorito {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura fixa para os itens */
+}
+
+.imagem-favorito {
+    width: 100px; /* Ajuste o tamanho das imagens */
+    height: auto;
+}
+
+.nome-favorito {
+    color: #e91e63; /* Cor do nome do esmalte */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.descricao {
+    color: #555; /* Cor da descrição */
+    font-size: 14px;
+}
+
+.botao-remover {
+    background-color: #c2185b; /* Rosa escuro */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-remover:hover {
+    background-color: #a50035; /* Tom mais escuro ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f0f4; /* Fundo suave */
+}
+
+.titulo {
+    text-align: center;
+    color: #e91e63; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.produto {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto; /* Centraliza */
+}
+
+.imagem-produto {
+    width: 100px; /* Ajuste o tamanho da imagem */
+    height: auto;
+}
+
+.nome-produto {
+    color: #e91e63; /* Cor do nome do produto */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.descricao {
+    color: #555; /* Cor da descrição */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 18px;
+    color: #c2185b; /* Cor do preço */
+    margin-bottom: 20px;
+}
+
+.botao.adicionar {
+    background-color: #e91e63; /* Rosa escuro */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao.adicionar:hover {
+    background-color: #c2185b; /* Tom mais escuro ao passar o mouse */
+}
+
+.sugestoes {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.lista-sugestoes {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sugestao {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.imagem-sugestao {
+    width: 80px; /* Ajuste o tamanho das imagens sugeridas */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
